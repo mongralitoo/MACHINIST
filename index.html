@@ -160,4 +160,74 @@
       }
     </script>
   </body>
+  
+<head>
+  <title>Personaggi</title>
+  <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+  <nav class="dropdown">
+    <img src="IMG/sun.png" id="icon">
+    <ul>
+      <li><a href="HOME.html">Home</a></li>
+      <li><a href="PANORAMICA.html">Trama</a></li>
+      <li><a href="PRODUZIONE.html">Produzione</a></li>
+      <li><a href="CITAZIONI.html">Citazioni</a></li>
+    </ul>
+  </nav>
+  <img class="sfondo" src="IMG/sfondo-personaggi.png" id="sfondo">
+  <h1 class="main-title1">Personaggi</h1>
+  <div class="contieni-personaggi">
+    <div class="gallery">
+      <div class="img-box">
+        
+        <div class="box-body">
+          <h1 class="box-title">Trevor</h1>
+          <p class="box-testo">Trevor è un operaio che non riesce a dormire da un anno per via di una non meglio specificata causa; il suo fisico, stremato dalla mancanza di riposo e di energie, ha un aspetto ormai cadaverico e la sua mente comincia a giocargli brutti scherzi: vede un po' ovunque, infatti, un certo uomo di nome Ivan che inizia a perseguitarlo.</p>
+        </div>
+      </div>
+      <div class="img-box">
+        <div class="box-body">
+          <h1 class="box-title">Stevie</h1>
+          <p class="box-testo"> Stevie è interpretata dall'attrice Jennifer Jason Leigh. Il personaggio di Stevie è una prostituta con cui il protagonista, Trevor Reznik, interagisce nel corso della trama del film.</p>
+        </div>
+      </div>
+      <div class="img-box">
+        <div class="box-body">
+          <h1 class="box-title">Marie</h1>
+          <p class="box-testo">Marie è interpretata dall' attrice Aitana Sánchez-Gijón. Il suo personaggio è una barista all' aereoporto e la madre del piccolo Nicholas di cui si innamora il protagonista Trevor</p>
+        </div>
+      </div>
+      <div class="img-box">
+        <div class="box-body">
+          <h1 class="box-title">Ivan</h1>
+          <p class="box-testo">Ivan è interpretato da John Sharian. Il suo personaggio si presenta nel film come l'antagonista e l'alter ego di Trevor/p>
+        </div>
+      </div>
+      <div class="img-box">
+        <div class="box-body">
+          <h1 class="box-title">Nicholas</h1>
+          <p class="box-testo">Nicholas è interpretato da Metthew Romero Moore. Il suo bersonaggio si palesa come figlio di Marie e anche se compare poche volte nel film ha un ruolo fondamentale. </p>
+        </div>
+      
+  </div>
+  <div class="spoiler-alert1">
+    <img src="IMG/spoiler-alert-white.png" id="spoiler">
+  </div>
+<script>
+  var icon = document.getElementById("icon");
+  icon.onclick = function() {
+    document.body.classList.toggle("dark-theme");
+    if (document.body.classList.contains("dark-theme")) {
+      icon.src = "IMG/moon.png";
+      sfondo.src = "IMG/sfondo-personaggi-white.png";
+      spoiler.src = "IMG/spoiler-alert-white-black.png";
+    } else {
+      icon.src = "IMG/sun.png";
+      sfondo.src = "IMG/sfondo-personaggi.png";
+      spoiler.src = "IMG/spoiler-alert-white.png";
+    }
+  };
+  </script>
+</body>
 </html>
