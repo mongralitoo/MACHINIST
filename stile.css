@@ -91,3 +91,10 @@ transition: opacity 0.3s ease-in-out;
 .personaggio:hover .testo-nascosto {
 opacity: 1;
 }
+#square {
+    float: left;
+    width: 100px;
+    height: 100px;
+    shape-outside: inset(20px 5px 30px 10px);
+    background: lightblue;
+}
