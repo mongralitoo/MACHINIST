@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 body {
     margin: 0;
     padding: 0;
@@ -74,4 +75,175 @@ section {
 
 .personaggio:hover .testo-nascosto {
     opacity: 1;
+=======
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #142626;
+    height: 100vh;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1em;
+}
+
+#button-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #fff;
+    color: #142626;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#home,
+#Trama,
+#Personaggi,
+#Legenda,
+#Infografica,
+#Spiegazione {
+    background-color: #142626;
+}
+
+/* Regola per le immagini dei personaggi */
+.personaggi-section .figurina-img {
+    width: 100%;
+    height: 50%;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.personaggi-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.personaggio {
+    position: relative;
+    text-align: center;
+}
+
+.testo-nascosto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.personaggio:hover .testo-nascosto {
+    opacity: 1;
+}
+
+#square {
+    float: left;
+    width: 100px;
+    height: 100px;
+    shape-outside: inset(20px 5px 30px 10px);
+    background: lightblue;
+}
+.contieni-personaggi{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    top: 165px;
+    position: absolute;
+    justify-content: center;
+}
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.img-box{
+    width: 130px;
+    height: 500px;
+    margin: 15px;
+    border-radius: 60px;
+    background-image: url(Personaggi/drugo.png);
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+
+}
+.img-box:hover{
+    width:350px;
+    border-radius: 30px;
+    height: 580px;
+
+}
+.img-box:nth-child(2){
+    background-image: url(Personaggi/walter.png);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(3){
+    background-image: url(Personaggi/donny.png);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(4){
+    background-image: url(Personaggi/jesus.png);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(5){
+    background-image: url(Personaggi/maude.png);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(6){
+    background-image: url(Personaggi/jeffrey.png);
+    background-size: cover;
+    background-position: center;
+}
+.box-testo{
+    font-size: 15px;
+}
+.box-title{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.box-body{
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    overflow: hidden;
+    position: absolute;
+    padding: 25px;
+    padding-top: 15px;
+    box-sizing: border-box;
+    transition: all 0.8s;
+    bottom: -100%;
+}
+.img-box:hover .box-body{
+    bottom: -280px;
+>>>>>>> Stashed changes
 }

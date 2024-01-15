@@ -12,11 +12,11 @@
 <body>
     <div id="button-container">
         <button class="button" onclick="mostraSezione('home')">Home</button>
-        <button class="button" onclick="mostraSezione('Trama')">Trama</button>
-        <button class="button" onclick="mostraSezione('Personaggi')">Personaggi</button>
-        <button class="button" onclick="mostraSezione('Legenda')">Legenda</button>
-        <button class="button" onclick="mostraSezione('Infografica')">Infografica</button>
-        <button class="button" onclick="mostraSezione('Spiegazione')">Spiegazione</button>
+        <button class="button" onclick="mostraSezione('trama')">Trama</button>
+        <button class="button" onclick="mostraSezione('personaggi')">Personaggi</button>
+        <button class="button" onclick="mostraSezione('legenda')">Legenda</button>
+        <button class="button" onclick="mostraSezione('infografica')">Infografica</button>
+        <button class="button" onclick="mostraSezione('spiegazione')">Spiegazione</button>
     </div>
 
     <section id="home">
@@ -24,6 +24,7 @@
         
     </section>
 
+<<<<<<< Updated upstream
     <section id="Trama">
       "The Machinist" è un film thriller psicologico diretto da Brad Anderson e uscito nel 2004. Il protagonista del film è Trevor Reznik, interpretato da Christian Bale, un operaio industriale che soffre di grave insonnia e inizia a vivere una vita tormentata.
 
@@ -38,7 +39,7 @@
     PERSONAGGI 
     id="Personaggi" class="personaggi-container">
         <div class="personaggio" onmouseover="mostraTesto(this)" onmouseout="nascondiTesto(this)">
-            <img src="immagine1.jpg" alt="Trevor">
+            <img src="343.png" alt="Trevor">
             <div class="testo-nascosto">Descrizione Personaggio 1</div>
         </div>
         <div class="personaggio" onmouseover="mostraTesto(this)" onmouseout="nascondiTesto(this)">
@@ -57,17 +58,64 @@
             <img src="immagine5.jpg" alt="Nicholas">
             <div class="testo-nascosto">Descrizione Personaggio 5</div>
         </div>
+=======
+    <section id="trama">
+        "The Machinist" è un film thriller psicologico diretto da Brad Anderson, uscito nel 2004. La trama ruota attorno a Trevor Reznik, interpretato da Christian Bale, un operaio specializzato che soffre di grave insonnia e disagi psicologici.
+
+        La vita di Trevor prende una piega oscura quando è coinvolto in un misterioso e inquietante incidente sul luogo di lavoro, per il quale si sente responsabile. Nonostante l'incidente, i suoi colleghi e amici sembrano voltargli le spalle, alimentando la sua paranoia e isolamento.
+        
+        Il film esplora il progressivo deterioramento mentale e fisico di Trevor a causa della sua estrema mancanza di sonno. Trevor è tormentato da strane apparizioni e visioni, incapace di distinguere tra realtà e la sua mente sempre più frantumata. Nel corso della storia, Trevor è ossessionato dallo spettro di un misterioso e minaccioso personaggio di nome Ivan, interpretato da John Sharian.
+        
+        Man mano che il film si sviluppa, Trevor diventa ossessionato dal risolvere il mistero che circonda la propria esistenza e gli eventi che hanno portato al suo attuale stato. Il film esplora temi di colpa, redenzione e le conseguenze delle proprie azioni, offrendo una narrazione avvincente e carica di suspense.
+>>>>>>> Stashed changes
     </section>
 
-    <section id="Legenda">
+    <section id="personaggi">
+        <div class="contieni-personaggi">
+            <div class="gallery">
+              <div class="img-box">
+                
+                <div class="box-body">
+                  <h1 class="box-title">Trevor</h1>
+                  <p class="box-testo">Trevor è un operaio che non riesce a dormire da un anno per via di una non meglio specificata causa; il suo fisico, stremato dalla mancanza di riposo e di energie, ha un aspetto ormai cadaverico e la sua mente comincia a giocargli brutti scherzi: vede un po' ovunque, infatti, un certo uomo di nome Ivan che inizia a perseguitarlo.</p>
+                </div>
+              </div>
+              <div class="img-box">
+                <div class="box-body">
+                  <h1 class="box-title">Stevie</h1>
+                  <p class="box-testo"> Stevie è interpretata dall'attrice Jennifer Jason Leigh. Il personaggio di Stevie è una prostituta con cui il protagonista, Trevor Reznik, interagisce nel corso della trama del film.</p>
+                </div>
+              </div>
+              <div class="img-box">
+                <div class="box-body">
+                  <h1 class="box-title">Marie</h1>
+                  <p class="box-testo">Marie è interpretata dall' attrice Aitana Sánchez-Gijón. Il suo personaggio è una barista all' aereoporto e la madre del piccolo Nicholas di cui si innamora il protagonista Trevor</p>
+                </div>
+              </div>
+              <div class="img-box">
+                <div class="box-body">
+                  <h1 class="box-title">Ivan</h1>
+                  <p class="box-testo">Ivan è interpretato da John Sharian. Il suo personaggio si presenta nel film come l'antagonista e l'alter ego di Trevor/p>
+                </div>
+              </div>
+              <div class="img-box">
+                <div class="box-body">
+                  <h1 class="box-title">Nicholas</h1>
+                  <p class="box-testo">Nicholas è interpretato da Metthew Romero Moore. Il suo bersonaggio si palesa come figlio di Marie e anche se compare poche volte nel film ha un ruolo fondamentale. </p>
+                </div>
+        
+        </div>
+    </section>
+
+    <section id="legenda">
         Legenda
     </section>
 
-    <section id="Infografica">
+    <section id="infografica">
        Infografica
     </section>
 
-    <section id="Spiegazione">
+    <section id="spiegazione">
         Spiegazione
     </section>
 
@@ -91,3 +139,37 @@
     </script>
 </body>
 </html>
+<<<<<<< Updated upstream
+=======
+
+    </section>
+
+    <section id="personaggi">
+        Personaggi 
+    </section>
+
+    <section id="legenda">
+        Legenda
+    </section>
+
+    <section id="infografica">
+       Infografica
+    </section>
+
+    <section id="spiegazione">
+        Spiegazione
+    </section>
+
+    <script>
+        function mostraSezione(sezioneId) {
+            var sezioneCorrente = document.getElementById(sezioneId);
+
+            window.scrollTo({
+                top: sezioneCorrente.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
+>>>>>>> Stashed changes
