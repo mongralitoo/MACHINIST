@@ -1,10 +1,10 @@
-<<<<<<< Updated upstream
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    color: #fff;
+    color: #FFFDE6;
     background-color: #142626;
+    text-align: center;
 }
 
 section {
@@ -13,237 +13,143 @@ section {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 2em;
-}
-
-#button-container {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 2;
-    display: flex;
-    flex-direction: row;
+    font-size: 20px;
 }
 
 .button {
-    margin-left: 10px;
+    margin-right: 30px;
+    margin-left: -15px;
     padding: 10px;
-    background-color: #fff;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: #FFFDE6;
     color: #142626;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
 }
-
-#home, #Trama, #Personaggi, #Legenda, #Infografica, #Spiegazione {
-    background-color: #142626;
-}
-
-.personaggi-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-.personaggio {
-    position: relative;
-    text-align: center;
-    margin: 10px; /* Modificato da 50px a 10px per evitare spazi eccessivi */
-    overflow: hidden;
-    width: 200px; /* Impostato una larghezza fissa */
-}
-
-.personaggio img {
+.menu {
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.testo-nascosto {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.personaggio:hover .testo-nascosto {
-    opacity: 1;
-=======
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    color: #fff;
-    background-color: #142626;
-    height: 100vh;
-}
-
-section {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 1em;
-}
-
-#button-container {
-    position: fixed;
-    top: 10px;
-    right: 10px;
     z-index: 2;
+    position: fixed;
     display: flex;
-    flex-direction: row;
-}
+    justify-content: flex-end;
+    padding: 12px;
+    font-weight: bold;
 
-.button {
-    margin-left: 10px;
-    padding: 10px;
-    background-color: #fff;
-    color: #142626;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
-
-#home,
-#Trama,
-#Personaggi,
-#Legenda,
-#Infografica,
-#Spiegazione {
+#home, #trama, #personaggi, #legenda, #infografica, #spiegazione {
     background-color: #142626;
 }
 
-/* Regola per le immagini dei personaggi */
-.personaggi-section .figurina-img {
-    width: 100%;
-    height: 50%;
-    max-width: 150px;
-    max-height: 150px;
-}
-
-.personaggi-section {
-    display: flex;
-    justify-content: space-around;
-}
-
-.personaggio {
-    position: relative;
-    text-align: center;
-}
-
-.testo-nascosto {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.personaggio:hover .testo-nascosto {
-    opacity: 1;
-}
-
-#square {
-    float: left;
-    width: 100px;
-    height: 100px;
-    shape-outside: inset(20px 5px 30px 10px);
-    background: lightblue;
-}
 .contieni-personaggi{
     width: 100%;
     height: 80vh;
     display: flex;
-    top: 165px;
     position: absolute;
     justify-content: center;
 }
+
 .gallery{
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
+
 .img-box{
     width: 130px;
     height: 500px;
     margin: 15px;
     border-radius: 60px;
-    background-image: url(Personaggi/drugo.png);
+    background-image: url(prova.png);
     background-size: cover;
     background-position: center;
     transition: all 0.5s;
     position: relative;
     overflow: hidden;
-
 }
+
 .img-box:hover{
     width:350px;
     border-radius: 30px;
-    height: 580px;
+    height: 520px;
+}
 
-}
 .img-box:nth-child(2){
-    background-image: url(Personaggi/walter.png);
+    background-image: url(trevor.jpg);
     background-size: cover;
     background-position: center;
 }
+
 .img-box:nth-child(3){
-    background-image: url(Personaggi/donny.png);
+    background-image: url(trevor.jpg);
     background-size: cover;
     background-position: center;
 }
+
 .img-box:nth-child(4){
-    background-image: url(Personaggi/jesus.png);
+    background-image: url(trevor.jpg);
     background-size: cover;
     background-position: center;
 }
+
 .img-box:nth-child(5){
-    background-image: url(Personaggi/maude.png);
+    background-image: url(trevor.jpg);
     background-size: cover;
     background-position: center;
 }
+
 .img-box:nth-child(6){
-    background-image: url(Personaggi/jeffrey.png);
+    background-image: url(trevor.jpg);
     background-size: cover;
     background-position: center;
 }
+
 .box-testo{
     font-size: 15px;
 }
+
 .box-title{
     font-size: 24px;
     margin-bottom: 5px;
 }
+
 .box-body{
     backdrop-filter: blur(5px);
     width: 100%;
     height: 100%;
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
+    color: FFFDE6;
+    background-color: rgba(0, 0, 0, 0.4);
     overflow: hidden;
-    position: absolute;
+    position: relative;
     padding: 25px;
     padding-top: 15px;
     box-sizing: border-box;
     transition: all 0.8s;
     bottom: -100%;
 }
+
 .img-box:hover .box-body{
     bottom: -280px;
->>>>>>> Stashed changes
+}
+
+#trama{
+    width: 80%;
+    margin: auto; /* Imposta il margine automatico per centrare il blocco */
+    text-align: center;
+}
+#home {
+    background-image: url(boh.jpg);
+    position: relative;
+}
+
+#home::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(20, 38, 38, 0), rgba(20, 38, 38, 2));
 }
