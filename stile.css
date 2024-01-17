@@ -175,6 +175,17 @@ section {
 #legenda{
     height: 60vh;
 }
+#infografica{
+    height: 550vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#infografica img{
+    width: 100%;
+    margin-left: -12%;
+
+}
 #home::after {
     content: "";
     position: absolute;
