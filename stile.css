@@ -156,7 +156,7 @@ section {
     width: 80%;
     height: 60vh;
     margin: auto; /* Imposta il margine automatico per centrare il blocco */
-    text-align: center;
+    text-align: justify;
     display: flex;
     flex-direction: column;
     margin-top: -80px;
