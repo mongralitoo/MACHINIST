@@ -17,8 +17,8 @@ section {
 }
 
 .button {
-    margin-right: 30px;
-    margin-left: -15px;
+    margin-right: 90px;
+    margin-left: -75px;
     padding: 10px;
     padding-right: 30px;
     padding-left: 30px;
@@ -27,19 +27,38 @@ section {
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 .menu {
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(50px);
     background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
-    z-index: 2;
+    z-index: 3;
     position: fixed;
     display: flex;
     justify-content: flex-end;
     padding: 12px;
+    padding-left: 50px;
     font-weight: bold;
-
+    height: 30px;
 }
+.mach img {
+    max-width: 100%;
+    height: 100%; /* Altezza pari al 100% della viewport height (altezza della finestra del browser) */
+    margin-right: 360px;
+    
+}
+.linea-bianca {
+    width: 80%; /* Imposta la larghezza al 100% della larghezza del contenitore */
+    height: 1px;
+    background-color: #FFFDE6;
+    margin-top: 15px; /* Spazio sopra la linea */
+    margin-bottom: 15px; /* Spazio sotto la linea */
+    margin-left: -120px;
+    margin-right: 100px;
+}
+
 #home, #trama, #personaggi, #legenda, #infografica, #spiegazione {
     background-color: #142626;
 }
@@ -48,8 +67,10 @@ section {
     width: 100%;
     height: 80vh;
     display: flex;
-    position: absolute;
+    position: relative;
     justify-content: center;
+    margin-top: 80px;
+
 }
 
 .gallery{
@@ -64,7 +85,7 @@ section {
     height: 500px;
     margin: 15px;
     border-radius: 60px;
-    background-image: url(prova.png);
+    background-image: url(immagini/prova.png);
     background-size: cover;
     background-position: center;
     transition: all 0.5s;
@@ -79,34 +100,29 @@ section {
 }
 
 .img-box:nth-child(2){
-    background-image: url(trevor.jpg);
+    background-image: url(immagini/stevie.png);
     background-size: cover;
     background-position: center;
 }
 
 .img-box:nth-child(3){
-    background-image: url(trevor.jpg);
+    background-image: url(immagini/marie.png);
     background-size: cover;
     background-position: center;
 }
 
 .img-box:nth-child(4){
-    background-image: url(trevor.jpg);
+    background-image: url(immagini/nick.png);
     background-size: cover;
     background-position: center;
 }
 
 .img-box:nth-child(5){
-    background-image: url(trevor.jpg);
+    background-image: url(immagini/ivan.png);
     background-size: cover;
     background-position: center;
 }
 
-.img-box:nth-child(6){
-    background-image: url(trevor.jpg);
-    background-size: cover;
-    background-position: center;
-}
 
 .box-testo{
     font-size: 15px;
@@ -121,7 +137,7 @@ section {
     backdrop-filter: blur(5px);
     width: 100%;
     height: 100%;
-    color: FFFDE6;
+    color: #FFFDE6;
     background-color: rgba(0, 0, 0, 0.4);
     overflow: hidden;
     position: relative;
@@ -138,18 +154,68 @@ section {
 
 #trama{
     width: 80%;
+    height: 60vh;
     margin: auto; /* Imposta il margine automatico per centrare il blocco */
-    text-align: center;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    margin-top: -80px;
 }
 #home {
-    background-image: url(boh.jpg);
+    background-image: url(immagini/boh.jpg);
     position: relative;
+    height: 70vh;
 }
+#personaggi {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+#legenda{
+    height: 60vh;
+}
+#infografica{
+    height: 550vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#infografica img{
+    width: 100%;
+    margin-left: -12%;
 
+}
 #home::after {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(20, 38, 38, 0), rgba(20, 38, 38, 2));
+    background: linear-gradient(rgba(20, 38, 38, 0), rgba(20, 38, 38, 5));
+}
+.titolo-film{
+    color: #FFFDE6;
+    z-index: 2;
+    font-size: 60px;
+margin-top: 1px;
+
+}
+.titolo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #FFFDE6;
+    border-radius: 30px;
+    padding: 50px;
+    backdrop-filter: blur(5px);
+    z-index: 2;
+    margin-top: 50px;
+}
+.sottotitolo-fillm {
+    z-index: 2;
+    margin-top: -50px;
+}
+.pers{
+    position: absolute;
+    margin-bottom: 500px;
 }
