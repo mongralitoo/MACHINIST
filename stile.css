@@ -154,7 +154,7 @@ section {
 
 #trama{
     width: 80%;
-    height: 60vh;
+    height: 100vh;
     margin: auto; /* Imposta il margine automatico per centrare il blocco */
     text-align: center;
     display: flex;
