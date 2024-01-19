@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="stile.css">
+    <script src="java.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,9 +39,10 @@
     <section id="trama">
       <div class="box-trama">
       <h1 class="t-trama">Trama</h1>
-
       <div class="linea-bianca-trama"></div>
-      <p id="paragrafo-trama" class="paragrafo-trama">"The Machinist" è un film thriller psicologico diretto da Brad Anderson e uscito nel 2004. Il protagonista del film è Trevor Reznik, interpretato da Christian Bale, un operaio industriale che soffre di grave insonnia e inizia a vivere una vita tormentata.
+        <div class="cont-trama">
+
+      <p class="paragrafo-trama">"The Machinist" è un film thriller psicologico diretto da Brad Anderson e uscito nel 2004. Il protagonista del film è Trevor Reznik, interpretato da Christian Bale, un operaio industriale che soffre di grave insonnia e inizia a vivere una vita tormentata.
 
         La trama si sviluppa quando Trevor, a causa della sua mancanza di sonno prolungata, inizia a sperimentare allucinazioni e visioni, rendendo difficile distinguere la realtà dalla sua mente frastornata. Trevor è coinvolto in un misterioso incidente sul luogo di lavoro, ma i suoi colleghi sembrano ignorarlo e lui si sente sempre più isolato.
         
@@ -49,6 +51,7 @@
         Il film esplora temi di colpa, redenzione e la psicologia della paranoia. La narrazione è avvincente e carica di suspense, portando lo spettatore in un viaggio psicologico attraverso la mente disturbata di Trevor Reznik. La performance intensa di Christian Bale contribuisce a rendere il film un'esperienza cinematografica avvincente e inquietante.
       </p>
     </div>
+  </div>
     </section>
 
     <section id="personaggi">
@@ -93,7 +96,7 @@
         Legenda
     </section>
 
-    <section id="infografica">
+    <section id="infografica" onscroll="infograficaSwitch()">
        <img src="immagini/mappalinea2.jpg">
     </section>
 
@@ -101,16 +104,5 @@
         Spiegazione
     </section>
 
-    <script>
-        function mostraSezione(sezioneId) {
-            var sezioneCorrente = document.getElementById(sezioneId);
-
-            window.scrollTo({
-                top: sezioneCorrente.offsetTop,
-                behavior: 'smooth'
-            });
-        }
-
-    </script>
 </body>
 </html>

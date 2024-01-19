@@ -156,7 +156,7 @@ section {
     width: 80%;
     height: 60vh;
     margin: auto; /* Imposta il margine automatico per centrare il blocco */
-    text-align: justify;
+    text-align: center;
     display: flex;
     flex-direction: column;
     margin-top: -80px;
@@ -197,9 +197,9 @@ section {
     color: #FFFDE6;
     z-index: 2;
     font-size: 60px;
-margin-top: 1px;
-font-family: anton;
-letter-spacing: 2px;
+    margin-top: 1px;
+    font-family: anton;
+    letter-spacing: 2px;
 }
 .titolo-container {
     display: flex;
@@ -222,31 +222,43 @@ letter-spacing: 2px;
     margin-bottom: 500px;
     font-family: antonio;
 }
-.t-trama p {
-    text-align: justify;
-    bottom: -100%;
-    display: none;
-    transition: all 0.5s;
+.box-trama {
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+}
+.cont-trama {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 0.8s;
+    top: 100%;
 }
 .t-trama{
+    transition: all 0.8s;
     font-family: antonio;
     text-align: center;
+    position: relative;
 }
-.t-trama:hover p{
-    transition: all 0.5s;
-    display: block;
+.box-trama:hover .cont-trama{
+    transition: all 0.8s;
+    top: 0;
+
+}
+.box-trama:hover .linea-bianca-trama{
+    transition: width 0.8s;
+    width: 100%;
+
+}
+.box-trama:hover .t-trama {
+top: 0;
 }
 .linea-bianca-trama {
-    width: 100%;
+    transition: width 0.8s;
+    width: 50%;
     height: 1px;
     background-color: #FFFDE6;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: -120px;
-    margin-right: 100px;
-}
-
-.box-trama:hover .paragrafo-trama{
-    bottom: 0%;
+    margin: 15px auto;
 
 }
