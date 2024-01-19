@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family:  'Anton', sans-serif;
+    font-family: Arial, sans-serif;
     color: #FFFDE6;
     background-color: #142626;
     text-align: center;
@@ -29,7 +29,6 @@ section {
     cursor: pointer;
     display: flex;
     align-items: center;
-    
 }
 .menu {
     backdrop-filter: blur(50px);
@@ -155,7 +154,7 @@ section {
 
 #trama{
     width: 80%;
-    height: 65vh;
+    height: 60vh;
     margin: auto; /* Imposta il margine automatico per centrare il blocco */
     text-align: center;
     display: flex;
@@ -198,8 +197,9 @@ section {
     color: #FFFDE6;
     z-index: 2;
     font-size: 60px;
-margin-top: 1px;
-
+    margin-top: 1px;
+    font-family: anton;
+    letter-spacing: 2px;
 }
 .titolo-container {
     display: flex;
@@ -211,25 +211,54 @@ margin-top: 1px;
     backdrop-filter: blur(5px);
     z-index: 2;
     margin-top: 50px;
-    font-family: 'Roboto', sans-serif;
 }
 .sottotitolo-fillm {
     z-index: 2;
-    margin-top: -50px;
-    font-family: 'Roboto', sans-serif;
-    
+    margin-top: -65px;
+    font-family: antonio;
 }
 .pers{
     position: absolute;
     margin-bottom: 500px;
-    font-family:  'Anton', sans-serif;
+    font-family: antonio;
 }
-
-.Trama{ font-family:  'Antonio', sans-serif;
-   
-    
+.box-trama {
+    width: 80%;
+    overflow: hidden;
+    position: relative;
 }
+.cont-trama {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 0.8s;
+    top: 100%;
+}
+.t-trama{
+    transition: all 0.8s;
+    font-family: antonio;
+    text-align: center;
+    position: relative;
+}
+.box-trama:hover .cont-trama{
+    transition: all 0.8s;
+    top: 0;
 
-.parag-t{
-    
-    font-family: 'Roboto', sans-serif}
+}
+.box-trama:hover .linea-bianca-trama{
+    transition: width 0.8s;
+    width: 100%;
+
+}
+.box-trama:hover .t-trama {
+top: 0;
+}
+.linea-bianca-trama {
+    transition: width 0.8s;
+    width: 50%;
+    height: 1px;
+    background-color: #FFFDE6;
+    margin: 15px auto;
+
+}
