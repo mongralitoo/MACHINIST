@@ -61,6 +61,7 @@ section {
 
 #home, #trama, #personaggi, #legenda, #infografica, #spiegazione {
     background-color: #142626;
+    
 }
 
 .contieni-personaggi{
@@ -211,6 +212,7 @@ section {
     backdrop-filter: blur(5px);
     z-index: 2;
     margin-top: 50px;
+    font-family:  'Anton', sans-serif;
 }
 .sottotitolo-fillm {
     z-index: 2;
@@ -220,7 +222,7 @@ section {
 .pers{
     position: absolute;
     margin-bottom: 500px;
-    font-family: antonio;
+    font-family:  'Anton', sans-serif;
 }
 .box-trama {
     width: 80%;
@@ -237,7 +239,7 @@ section {
 }
 .t-trama{
     transition: all 0.8s;
-    font-family: antonio;
+    font-family:  'Anton', sans-serif;
     text-align: center;
     position: relative;
 }
@@ -260,5 +262,15 @@ top: 0;
     height: 1px;
     background-color: #FFFDE6;
     margin: 15px auto;
+
+}
+
+.spiegazione{
+    
+    font-family:  'Anton', sans-serif;
+
+}
+.legenda{
+    font-family:  'Anton', sans-serif;
 
 }
