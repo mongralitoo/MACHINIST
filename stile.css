@@ -549,6 +549,7 @@ section {
     width: 80%; /* Imposta la larghezza desiderata per l'icona */
     height: auto; /* Imposta l'altezza automaticamente in base alla larghezza */
 }
+
 #home::after {
     content: "";
     position: absolute;
