@@ -21,8 +21,8 @@ section {
 
 .button {
     transition: all 0.3;
-    margin-right: 2%;
-    margin-left: 2%;
+    margin-right: 1%;
+    margin-left: 1%;
     padding: 1%;
     background-color: #FFFDE6;
     color: #142626;
@@ -33,6 +33,8 @@ section {
     cursor: pointer;
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 30%;
 }
 .button:hover {
     transition: all 0.3s;
@@ -47,13 +49,12 @@ section {
 .menu {
     backdrop-filter: blur(50px);
     background-color: rgba(0, 0, 0, 0.2);
-    width: calc(100% -3%);
+    width: 100%;
     z-index: 3;
     position: fixed;
     display: flex;
-    justify-content: flex-end;
-    padding: 2%;
-    margin-right: 3%;
+    justify-content: space-around;
+    padding: 1% 0;
     font-weight: bold;
     height: 30px;
     transition: background-color 0.5s;
@@ -64,8 +65,8 @@ section {
     background-color: #FFFDE6;
     margin-top: 15px; /* Spazio sopra la linea */
     margin-bottom: 15px; /* Spazio sotto la linea */
-    margin-left: -120px;
-    margin-right: 100px;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 #home, #trama, #personaggi, #legenda, #infografica, #spiegazione {
@@ -87,6 +88,7 @@ section {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    height: 120%;
 }
 
 .img-box{
@@ -162,15 +164,17 @@ section {
 }
 
 #trama{
-    width: 80%;
+    z-index: -2;
+    width: 100%;
     height: 100vh;
     margin: auto; /* Imposta il margine automatico per centrare il blocco */
     text-align: center;
     display: flex;
     flex-direction: column;
     margin-top: -80px;
+    background-image: url(immagini/sondotramaaaa.png);
+    background-size: cover;
 }
-
 
 #home {
     background-image: url(immagini/boh3.jpg);
@@ -184,7 +188,7 @@ section {
     height: 80vh;
 }
 #legenda{
-    height: 50vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -317,4 +321,10 @@ section {
     max-width: 30%;
     height: auto;
     margin: 2%;
+}
+#trama img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
 }
