@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
@@ -17,37 +20,43 @@ section {
 }
 
 .button {
-    margin-right: 90px;
-    margin-left: -75px;
-    padding: 10px;
-    padding-right: 30px;
-    padding-left: 30px;
+    transition: all 0.3;
+    margin-right: 2%;
+    margin-left: 2%;
+    padding: 1%;
     background-color: #FFFDE6;
     color: #142626;
     border: none;
     border-radius: 20px;
+    font-family: poppins;
+    font-weight: 700;
     cursor: pointer;
     display: flex;
     align-items: center;
 }
+.button:hover {
+    transition: all 0.3s;
+    background-color: #142626; 
+    color:white;
+}
+.button:not(:hover) {
+    background-color: #FFFDE6;
+    color: #142626;
+    transition: all 0.3s;
+}
 .menu {
     backdrop-filter: blur(50px);
     background-color: rgba(0, 0, 0, 0.2);
-    width: 100%;
+    width: calc(100% -3%);
     z-index: 3;
     position: fixed;
     display: flex;
     justify-content: flex-end;
-    padding: 12px;
-    padding-left: 50px;
+    padding: 2%;
+    margin-right: 3%;
     font-weight: bold;
     height: 30px;
-}
-.mach img {
-    max-width: 100%;
-    height: 100%; /* Altezza pari al 100% della viewport height (altezza della finestra del browser) */
-    margin-right: 360px;
-    
+    transition: background-color 0.5s;
 }
 .linea-bianca {
     width: 80%; /* Imposta la larghezza al 100% della larghezza del contenitore */
@@ -161,10 +170,12 @@ section {
     flex-direction: column;
     margin-top: -80px;
 }
+
+
 #home {
-    background-image: url(immagini/boh.jpg);
+    background-image: url(immagini/boh3.jpg);
     position: relative;
-    height: 70vh;
+
 }
 #personaggi {
     text-align: center;
@@ -173,7 +184,12 @@ section {
     height: 80vh;
 }
 #legenda{
-    height: 60vh;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
 }
 #infografica{
     height: 550vh;
@@ -182,9 +198,9 @@ section {
     align-items: center;
 }
 #infografica img{
-    width: 100%;
+    height: auto;
+    width: 80%;
     margin-left: -12%;
-
 }
 #home::after {
     content: "";
@@ -194,71 +210,111 @@ section {
     background: linear-gradient(rgba(20, 38, 38, 0), rgba(20, 38, 38, 5));
 }
 .titolo-film{
-    color: #FFFDE6;
     z-index: 2;
-    font-size: 60px;
+    font-size: 80px;
     margin-top: 1px;
-    font-family: anton;
-    letter-spacing: 2px;
+    font-family: poppins;
+    font-weight: 700;
+    border-right: 5px solid white;
+    width: 100%;
+    text-shadow: 1px 1px 3px #142626;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+         typing 2s,
+         cursor .5s step-end infinite alternate;
+}
+ @keyframes cursor {
+    50% { border-color: transparent }
+ }
+ @keyframes typing {
+    from {
+        width: 0;
+
+    }
+    to {
+        width: 100%;
+    }
 }
 .titolo-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 2px solid #FFFDE6;
-    border-radius: 30px;
     padding: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-image: url(immagini/file\ cover\ -\ 1.png);
+    background-size: cover;
     backdrop-filter: blur(5px);
     z-index: 2;
-    margin-top: 50px;
+    border-radius: 200px;
 }
 .sottotitolo-fillm {
     z-index: 2;
-    margin-top: -65px;
-    font-family: antonio;
+    opacity: 0;
+    font-size: 35px;
+    margin-top: -90px;
+    font-family: poppins;
+    font-weight: 200;
+    text-shadow: 1px 1px 3px #142626;
+    animation: apparizione 1.5s ease-in-out 1s forwards;
+}
+@keyframes apparizione {
+    from {
+        opacity: 0;
+        bottom: 100%;
+    }
+    to {
+        opacity: 1;
+        bottom: 0%;
+    }
 }
 .pers{
     position: absolute;
     margin-bottom: 500px;
-    font-family: antonio;
+    font-family: poppins;
 }
-.box-trama {
-    width: 80%;
+.paragrafo-trama {
+    transition: all 0.3s;
+    font-size: 15px;
+    width: 85%;
+    height: auto;
     overflow: hidden;
-    position: relative;
-}
-.cont-trama {
-    width: 100%;
-    overflow: hidden;
+    font-family: POPPINS;
     position: relative;
     box-sizing: border-box;
-    transition: all 0.8s;
-    top: 100%;
+    padding: 3%;
+    border: 2px solid #FFFDE6;
+    border-radius: 80px;
+
+}
+.paragrafo-trama:hover{
+    transition: all 0.3s;
+    background-color: #FFFDE6;
+    color: #142626;
 }
 .t-trama{
     transition: all 0.8s;
-    font-family: antonio;
+    font-family: poppins;
     text-align: center;
     position: relative;
 }
-.box-trama:hover .cont-trama{
-    transition: all 0.8s;
-    top: 0;
+
+#legenda img{
+    width: 65%;
+    height: auto;
+    margin-top: 20%;
+}
+.leggia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
 }
-.box-trama:hover .linea-bianca-trama{
-    transition: width 0.8s;
-    width: 100%;
-
-}
-.box-trama:hover .t-trama {
-top: 0;
-}
-.linea-bianca-trama {
-    transition: width 0.8s;
-    width: 50%;
-    height: 1px;
-    background-color: #FFFDE6;
-    margin: 15px auto;
-
+.leggia img{
+    max-width: 30%;
+    height: auto;
+    margin: 2%;
 }

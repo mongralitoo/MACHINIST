@@ -1,3 +1,4 @@
+
 function mostraSezione(sezioneId) {
     var sezioneCorrente = document.getElementById(sezioneId);
 

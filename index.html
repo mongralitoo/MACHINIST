@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+  <script src="https://unpkg.com/scrollreveal"></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="stile.css">
     <script src="java.js"></script>
@@ -11,6 +12,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap" rel="stylesheet">
     <title>The Machinist</title>
     <style>
        
@@ -18,9 +24,6 @@
 </head>
 <body>
   <div class="menu">
-    <div class="mach">
-        <img src="immagini/titolo home.png">
-    </div>
     <div class="linea-bianca"></div>
         <button class="button" onclick="mostraSezione('home')">Home</button>
         <button class="button" onclick="mostraSezione('trama')">Trama</button>
@@ -37,11 +40,7 @@
         
     </section>
     <section id="trama">
-      <div class="box-trama">
-      <h1 class="t-trama">Trama</h1>
-      <div class="linea-bianca-trama"></div>
-        <div class="cont-trama">
-
+      <h1 class="t-trama">TRAMA</h1>
       <p class="paragrafo-trama">"The Machinist" è un film thriller psicologico diretto da Brad Anderson e uscito nel 2004. Il protagonista del film è Trevor Reznik, interpretato da Christian Bale, un operaio industriale che soffre di grave insonnia e inizia a vivere una vita tormentata.
 
         La trama si sviluppa quando Trevor, a causa della sua mancanza di sonno prolungata, inizia a sperimentare allucinazioni e visioni, rendendo difficile distinguere la realtà dalla sua mente frastornata. Trevor è coinvolto in un misterioso incidente sul luogo di lavoro, ma i suoi colleghi sembrano ignorarlo e lui si sente sempre più isolato.
@@ -50,12 +49,10 @@
         
         Il film esplora temi di colpa, redenzione e la psicologia della paranoia. La narrazione è avvincente e carica di suspense, portando lo spettatore in un viaggio psicologico attraverso la mente disturbata di Trevor Reznik. La performance intensa di Christian Bale contribuisce a rendere il film un'esperienza cinematografica avvincente e inquietante.
       </p>
-    </div>
-  </div>
     </section>
 
     <section id="personaggi">
-      <h1 class="pers">Personaggi</h1>
+      <h1 class="pers">PERSONAGGI</h1>
     <div class="contieni-personaggi">
         <div class="gallery">
           <div class="img-box">
@@ -93,11 +90,14 @@
     </section>
 
     <section id="legenda">
-        Legenda
+      <div class="leggia">
+        <img src="immagini/leg1.png">
+        <img src="immagini/leg2.png">
+      </div>
     </section>
 
     <section id="infografica" onscroll="infograficaSwitch()">
-       <img src="immagini/mappalinea2.jpg">
+       <img src="immagini/mappafin.jpg">
     </section>
 
     <section id="spiegazione">
@@ -105,4 +105,17 @@
     </section>
 
 </body>
+<script>
+ScrollReveal ({
+  reset: true,
+  distance: '100px',
+  duration: 1500,
+  delay: 500
+});
+ScrollReveal().reveal('.t-trama, .paragrafo-trama', { delay: 500, origin:'left' });
+ScrollReveal().reveal( '.paragrafo-trama', { delay: 500, origin:'right' });
+ScrollReveal().reveal( '.pers', { delay: 500, origin:'right' });
+ScrollReveal().reveal( '.img-box', { delay: 500, origin:'bottom', interval: 200 });
+ScrollReveal().reveal( '.leggia img', { delay: 500, origin:'right', interval: 200 });
+</script>
 </html>
