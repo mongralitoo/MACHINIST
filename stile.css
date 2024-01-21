@@ -206,6 +206,349 @@ section {
     width: 80%;
     margin-left: -12%;
 }
+.post-it {
+    position: absolute;
+    width: 3.8%; /* Imposta la larghezza desiderata */
+    height: 3.8%; /* Imposta l'altezza desiderata */
+    top: 249%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post-it1 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 319%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post-it2 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 347%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-it3 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 410%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-it4 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 438%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-it5 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 487%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post-it6 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 612%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post-it7 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 851%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post-it img {
+    width: 80%; /* Imposta la larghezza desiderata per l'icona */
+    height: auto; /* Imposta l'altezza automaticamente in base alla larghezza */
+}
+
+.route {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 508%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.route1 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 431%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.route2 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 543%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.route3 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 559%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.route img {
+    width: 80%; /* Imposta la larghezza desiderata per l'icona */
+    height: auto; /* Imposta l'altezza automaticamente in base alla larghezza */
+}
+
+.mani {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 378%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mani1 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 786%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mani img {
+    width: 80%; /* Imposta la larghezza desiderata per l'icona */
+    height: auto; /* Imposta l'altezza automaticamente in base alla larghezza */
+}
+
+.macchina {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 390%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.macchina1 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 464%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.macchina2 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 681%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.macchina img {
+    width: 80%; /* Imposta la larghezza desiderata per l'icona */
+    height: auto; /* Imposta l'altezza automaticamente in base alla larghezza */
+}
+
+
+.orologio {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 295%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orologio1 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 474%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orologio2 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 571%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orologio3 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 592%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orologio img {
+    width: 80%; /* Imposta la larghezza desiderata per l'icona */
+    height: auto; /* Imposta l'altezza automaticamente in base alla larghezza */
+}
+
+.accendisigari {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 364%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accendisigari1 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 450%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accendisigari img {
+    width: 80%; /* Imposta la larghezza desiderata per l'icona */
+    height: auto; /* Imposta l'altezza automaticamente in base alla larghezza */
+}
 #home::after {
     content: "";
     position: absolute;
