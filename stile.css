@@ -784,3 +784,12 @@ section {
     height: auto; /* L'immagine si adatta proporzionalmente alla larghezza */
     margin-top: 10px; /* Aggiungi margine sopra l'immagine a tua scelta */
   }
+#lege2 {
+height: auto;
+width: 100%;
+justify-content: center;
+}
+#lege2 img{
+    width: 100%;
+    height: auto;
+}
