@@ -777,3 +777,16 @@ section {
     height: 520px;
 }
 
+    
+
+#spoiler{
+    height: auto;
+    justify-content: center;
+    display: flex;
+
+}
+.mappafinale {
+    max-width: 75%; /* L'immagine si adatta alla larghezza massima del contenitore */
+    height: auto; /* L'immagine si adatta proporzionalmente alla larghezza */
+    margin-top: 10px; /* Aggiungi margine sopra l'immagine a tua scelta */
+  }
