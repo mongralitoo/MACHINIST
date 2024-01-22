@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
@@ -17,18 +20,31 @@ section {
 }
 
 .button {
-    margin-right: 90px;
-    margin-left: -75px;
-    padding: 10px;
-    padding-right: 30px;
-    padding-left: 30px;
+    transition: all 0.3;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding: 1%;
     background-color: #FFFDE6;
     color: #142626;
     border: none;
     border-radius: 20px;
+    font-family: poppins;
+    font-weight: 700;
     cursor: pointer;
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+.button:hover {
+    transition: all 0.3s;
+    background-color: #142626; 
+    color:white;
+}
+.button:not(:hover) {
+    background-color: #FFFDE6;
+    color: #142626;
+    transition: all 0.3s;
 }
 .menu {
     backdrop-filter: blur(50px);
@@ -37,17 +53,11 @@ section {
     z-index: 3;
     position: fixed;
     display: flex;
-    justify-content: flex-end;
-    padding: 12px;
-    padding-left: 50px;
+    justify-content: space-around;
+    padding: 1% 0;
     font-weight: bold;
     height: 30px;
-}
-.mach img {
-    max-width: 100%;
-    height: 100%; /* Altezza pari al 100% della viewport height (altezza della finestra del browser) */
-    margin-right: 360px;
-    
+    transition: background-color 0.5s;
 }
 .linea-bianca {
     width: 80%; /* Imposta la larghezza al 100% della larghezza del contenitore */
@@ -55,13 +65,12 @@ section {
     background-color: #FFFDE6;
     margin-top: 15px; /* Spazio sopra la linea */
     margin-bottom: 15px; /* Spazio sotto la linea */
-    margin-left: -120px;
-    margin-right: 100px;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 #home, #trama, #personaggi, #legenda, #infografica, #spiegazione {
     background-color: #142626;
-    
 }
 
 .contieni-personaggi{
@@ -79,6 +88,7 @@ section {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    height: 120%;
 }
 
 .img-box{
@@ -154,39 +164,395 @@ section {
 }
 
 #trama{
-    width: 80%;
+    z-index: -2;
+    width: 100%;
     height: 100vh;
     margin: auto; /* Imposta il margine automatico per centrare il blocco */
     text-align: center;
     display: flex;
     flex-direction: column;
     margin-top: -80px;
+    background-image: url(immagini/ultimissimotrama.jpg);
+    background-size: cover;
 }
+
 #home {
-    background-image: url(immagini/boh.jpg);
+    background-image: url(immagini/boh3.jpg);
     position: relative;
-    height: 70vh;
+
 }
 #personaggi {
     text-align: center;
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 100vh;
+    background-image: url(immagini/sfondopersonaggi.png);
+    background-size: cover;
 }
 #legenda{
     height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
 }
 #infografica{
     height: 550vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #infografica img{
-    width: 100%;
+    height: auto;
+    width: 80%;
     margin-left: -12%;
-
 }
+.post-it {
+    position: absolute;
+    width: 3.8%; /* Imposta la larghezza desiderata */
+    height: 3.8%; /* Imposta l'altezza desiderata */
+    top: 249%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post-it1 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 319%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post-it2 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 347%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-it3 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 410%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-it4 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 438%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-it5 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 487%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post-it6 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 612%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post-it7 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 851%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post-it img {
+    width: 80%; /* Imposta la larghezza desiderata per l'icona */
+    height: auto; /* Imposta l'altezza automaticamente in base alla larghezza */
+}
+
+.route {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 508%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.route1 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 431%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.route2 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 543%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.route3 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 559%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.route img {
+    width: 80%; /* Imposta la larghezza desiderata per l'icona */
+    height: auto; /* Imposta l'altezza automaticamente in base alla larghezza */
+}
+
+.mani {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 378%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mani1 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 786%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mani img {
+    width: 80%; /* Imposta la larghezza desiderata per l'icona */
+    height: auto; /* Imposta l'altezza automaticamente in base alla larghezza */
+}
+
+.macchina {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 390%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.macchina1 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 464%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.macchina2 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 681%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.macchina img {
+    width: 80%; /* Imposta la larghezza desiderata per l'icona */
+    height: auto; /* Imposta l'altezza automaticamente in base alla larghezza */
+}
+
+
+.orologio {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 295%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orologio1 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 474%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orologio2 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 571%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orologio3 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 592%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orologio img {
+    width: 80%; /* Imposta la larghezza desiderata per l'icona */
+    height: auto; /* Imposta l'altezza automaticamente in base alla larghezza */
+}
+
+.accendisigari {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 364%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accendisigari1 {
+    position: absolute;
+    width: 4%; /* Imposta la larghezza desiderata */
+    height: 4%; /* Imposta l'altezza desiderata */
+    top: 450%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accendisigari img {
+    width: 80%; /* Imposta la larghezza desiderata per l'icona */
+    height: auto; /* Imposta l'altezza automaticamente in base alla larghezza */
+}
+
 #home::after {
     content: "";
     position: absolute;
@@ -195,82 +561,218 @@ section {
     background: linear-gradient(rgba(20, 38, 38, 0), rgba(20, 38, 38, 5));
 }
 .titolo-film{
-    color: #FFFDE6;
     z-index: 2;
-    font-size: 60px;
+    font-size: 80px;
     margin-top: 1px;
-    font-family: anton;
-    letter-spacing: 2px;
+    font-family: poppins;
+    font-weight: 700;
+    border-right: 5px solid white;
+    width: 100%;
+    text-shadow: 1px 1px 3px #142626;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+         typing 2s,
+         cursor .5s step-end infinite alternate;
+}
+ @keyframes cursor {
+    50% { border-color: transparent }
+ }
+ @keyframes typing {
+    from {
+        width: 0;
+
+    }
+    to {
+        width: 100%;
+    }
 }
 .titolo-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 2px solid #FFFDE6;
-    border-radius: 30px;
     padding: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-image: url(immagini/file\ cover\ -\ 1.png);
+    background-size: cover;
     backdrop-filter: blur(5px);
     z-index: 2;
-    margin-top: 50px;
-    font-family:  'Anton', sans-serif;
+    border-radius: 200px;
 }
 .sottotitolo-fillm {
     z-index: 2;
-    margin-top: -65px;
-    font-family: antonio;
+    opacity: 0;
+    font-size: 35px;
+    margin-top: -90px;
+    font-family: poppins;
+    font-weight: 200;
+    text-shadow: 1px 1px 3px #142626;
+    animation: apparizione 1.5s ease-in-out 1s forwards;
+}
+@keyframes apparizione {
+    from {
+        opacity: 0;
+        bottom: 100%;
+    }
+    to {
+        opacity: 1;
+        bottom: 0%;
+    }
 }
 .pers{
     position: absolute;
     margin-bottom: 500px;
-    font-family:  'Anton', sans-serif;
+    font-family: poppins;
 }
-.box-trama {
-    width: 80%;
+.paragrafo-trama {
+    transition: all 0.3s;
+    font-size: 15px;
+    width: 85%;
+    height: auto;
     overflow: hidden;
-    position: relative;
-}
-.cont-trama {
-    width: 100%;
-    overflow: hidden;
+    font-family: POPPINS;
     position: relative;
     box-sizing: border-box;
-    transition: all 0.8s;
-    top: 100%;
+    padding: 3%;
+    border: 2px solid #FFFDE6;
+    border-radius: 80px;
+
+}
+.paragrafo-trama:hover{
+    transition: all 0.3s;
+    background-color: #FFFDE6;
+    color: #142626;
 }
 .t-trama{
     transition: all 0.8s;
-    font-family:  'Anton', sans-serif;
+    font-family: poppins;
     text-align: center;
     position: relative;
 }
-.box-trama:hover .cont-trama{
-    transition: all 0.8s;
-    top: 0;
+
+#legenda img{
+    width: 65%;
+    height: auto;
+    margin-top: 20%;
+}
+.leggia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
 }
-.box-trama:hover .linea-bianca-trama{
-    transition: width 0.8s;
+.leggia img{
+    max-width: 30%;
+    height: auto;
+    margin: 2%;
+}
+#trama img{
     width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+}
+.cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+    fill: none;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+  }
+
+  .cls-1, .cls-2, .cls-4, .cls-5 {
+    stroke-width: 1.05px;
+  }
+
+  .cls-1, .cls-3 {
+    stroke: #fff;
+  }
+
+  .cls-2 {
+    stroke: #8db8c4;
+  }
+
+  .cls-3 {
+    stroke-width: 2.94px;
+  }
+
+  .cls-4 {
+    stroke: #a67e9d;
+  }
+
+  .cls-5 {
+    stroke: #375544;
+  }
+
+
+  .lines {
+    height: auto;
+    width: 54%;
+    position: absolute;
+    margin-top: 29%;
+    margin-left: 3.5%;
+  }
+  .o-lines{
+    position: absolute;
+    height: auto;
+    width: 67.5%;
+    margin-left: -31%;
+    margin-top: -46%;
+  }
+  .mappa-vuota{
+    position: absolute;
+  }
+  .kls-1 {
+    fill: none;
+    stroke: #fff;
+  }
+  .linea-tempo{
+    width: 80%;
+    height: 600vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #spiegazione{
+    z-index: -2;
+    width: 100%;
+    height: 100vh;
+    margin: auto; /* Imposta il margine automatico per centrare il blocco */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: -80px;
+    background-image: url(immagini/sfondo-spiegazione.png);
+    background-size: cover;
+}
+
+.paragrafo-spiegazione {
+    transition: all 0.3s;
+    font-size: 15px;
+    width: 85%;
+    height: auto;
+    overflow: hidden;
+    font-family: POPPINS;
+    position: relative;
+    box-sizing: border-box;
+    padding: 3%;
+    border: 2px solid #FFFDE6;
+    border-radius: 80px;
 
 }
-.box-trama:hover .t-trama {
-top: 0;
-}
-.linea-bianca-trama {
-    transition: width 0.8s;
-    width: 50%;
-    height: 1px;
+.paragrafo-spiegazione:hover{
+    transition: all 0.3s;
     background-color: #FFFDE6;
-    margin: 15px auto;
-
+    color: #142626;
 }
 
-.spiegazione{
-    
-    font-family:  'Anton', sans-serif;
 
-}
-.legenda{
-    font-family:  'Anton', sans-serif;
 
+.img-box:hover{
+    width:350px;
+    border-radius: 30px;
+    height: 520px;
 }
